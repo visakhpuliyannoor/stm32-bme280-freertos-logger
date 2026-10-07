@@ -1,0 +1,4 @@
+../Core/Src/BME280.c:20:6:BME280_Init	40	static
+../Core/Src/BME280.c:79:9:BME_Temperature_Calculation	48	static
+../Core/Src/BME280.c:95:9:BME_Pressure_Calculation	352	static
+../Core/Src/BME280.c:121:9:BME_Humidity_Calculation	40	static
