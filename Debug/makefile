@@ -64,8 +64,8 @@ all: main-build
 main-build: FreeRtOS.elf secondary-outputs
 
 # Tool invocations
-FreeRtOS.elf FreeRtOS.map: $(OBJS) $(USER_OBJS) D:\Visakh\Software\ -\ working\STM-based\PRC-309\New\ folder\PRC309_VER_1_01_4_Vel_Electronics_type_4_20\FreeRtOS\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "FreeRtOS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Visakh\Software - working\STM-based\PRC-309\New folder\PRC309_VER_1_01_4_Vel_Electronics_type_4_20\FreeRtOS\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FreeRtOS.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+FreeRtOS.elf FreeRtOS.map: $(OBJS) $(USER_OBJS) C:\Visakh\STM_Project\Coding\Learn2\stm32-bme280-freertos-logger\STM32F446RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "FreeRtOS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Visakh\STM_Project\Coding\Learn2\stm32-bme280-freertos-logger\STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FreeRtOS.map" -Wl,--gc-sections -static -u _printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
